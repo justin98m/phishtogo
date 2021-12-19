@@ -1,19 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="shortcut icon" href="../media/donut.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PHISH TO GO </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/phishStreamDirectory.css">
   </head>
-    <h1>Insert Phish Phrase Here</h1>
+    <h1 id="phrase">Phish Phrase Placement</h1>
   <body>
-    <div class="phishStream">
-      <ul id="streamList">
 
-      </ul>
-    </div>
-	<script src="diplayphish.js"></script>
+      <div id="streamRow">
+        <ul id="streamList">
+
+        </ul>
+        <div id="photo">
+          <a href="./addStream.html">
+          <picture>
+            <source srcset="../media/phishpizza335.png" media="(max-width: 1036px)">
+            <source srcset="../media/phishpizza500.png"
+            media="(max-width: 1370px) and (min-width: 1036px)">
+            <source src="../media/phishpizza680.png">
+            <img
+              src="../media/phishpizza680.png"
+              alt="Pizza with blue pizza sauce and red circles, a phish pizza">
+          </picture>
+          </a>
+        </div>
+	<script src="../js/displayphish.js" type="module"></script>
   </body>
 </html>

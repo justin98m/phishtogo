@@ -4,22 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PHISH TO GO</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Phish Pizza</title>
+    <link rel="stylesheet" href="../css/addStream.css">
+    <h1>Add a Jam to the list here</h1>
   </head>
-
   <body>
-    <nav>
-      <a href="./findStream.html"><li>Listen To Phish</li></a>
-      <li id="active">Add TO Phish</li>
-    </nav>
-    <form class="" action="./addPhish.js" method="post">
+    <div id="master">
+    <form  id="form"action="#" method="post">
       <label for="title">Title:</label>
-      <input type="text" name="title" placeholder="Title Here">
-      <label for="color">Color Decoration:</label>
-      <input type="color" name="color">
-      <label for="url">Link to Video:</label>
-      <input type="url" name="url" placeholder="www.Youtube.com/phishvideo">
+      <input  id="song" type="text" name="title" placeholder="Type Title Here"required><br>
+      <p id="colorLabel">Pick A Color</p>
+      <input  id="color" type="color" name="color" required><br>
+      <div id="urlContainer">
+        <label for="url">Link to Video:</label>
+        <input id="url"type="url" name="url" placeholder="Paste URL HERE..." required>
+      </div>
+      <input type="submit" onsubmit="return addphish()" name="submit" value="Submit Form" id="submit">
     </form>
+    <div id="photo">
+      <a href="./findStream.html">
+      <picture>
+        <source srcset="../media/phishpizza335.png" media="(max-width: 1036px)">
+        <source srcset="../media/phishpizza500.png"
+        media="(max-width: 1370px) and (min-width: 1036px)">
+        <source src="../media/phishpizza680.png">
+        <img
+          src="../media/phishpizza680.png"
+          alt="Pizza with blue pizza sauce and red circles, a phish pizza">
+      </picture>
+      </a>
+    </div>
+  </div>
+  <script src="../js/addphish.js">
+
+  </script>
   </body>
 </html>
