@@ -1,0 +1,38 @@
+{
+  "phrase": [
+    "We want you to be happy, 'cause this is your song too.",
+    "Come waste your time with me",
+    "Can i live while I'm young?",
+    "Whatever you do take care of your shoes",
+    "Symbop and beebaphone, skyballs and saxscrapers.",
+    "Can't this wait 'til I'm old? Can't I live while I'm young?",
+    "Brain dead and made of money, no future at all."
+  ],
+  "song": [
+    {
+      "title": "Feugo",
+      "url": "https://www.youtube.com/watch?v=-TnkKp3vk8w",
+      "color": "#ffe08a"
+    },
+    {
+      "title": "Halfway to the Moon",
+      "url": "https://www.youtube.com/watch?v=kaBlQ7PWEQ8",
+      "color": "#4fff4f"
+    },
+    {
+      "title": "Test",
+      "url": "https://www.youtube.com/watch?v=onq0yTA-J_M",
+      "color": "#f57900"
+    },
+    {
+      "title": "Test",
+      "url": "https://www.youtube.com/watch?v=onq0yTA-J_M",
+      "color": "#f57900"
+    },
+    {
+      "title": "Test",
+      "url": "https://www.youtube.com/watch?v=onq0yTA-J_M",
+      "color": "#f57900"
+    }
+  ]
+}

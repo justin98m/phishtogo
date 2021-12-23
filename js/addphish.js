@@ -1,14 +1,38 @@
-function addphish (){
-console.log("Hello There, I'm Running")
-console.log("Up Next \n -mobile friend visuals \n creating script to be ran to take input and chang json file");
-console.log("Add Delete button to each song");
-console.log("Then send to sever to update json");
-console.log('Getting https pleaseee');
-console.log("Uploading files to s3");
-console.log("Script to upload to s3 when json update happens");
-console.log("can ya buy phishPizza?");
-}
-
 var form = document.getElementById('form')
-form.addEventListener('submit',addphish)
-console.log('hello');
+//taken from : https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_forms_through_JavaScript
+//sends song data to server to be added to json file
+function sendData(song){
+  const XHR = new XMLHttpRequest();
+  console.log("Sending ", song , " TO localhost");
+  //wait for response from server
+  //then alert of success or failure
+  XHR.addEventListener("load", function(event){
+    alert("Data Submitted")
+    form['submit'].disabled = false
+  })
+  XHR.addEventListener("error", function(event){
+    alert("There was an error , contact Justin so he can fix it")
+    form['submit'].disabled = false
+  })
+  XHR.open("POST", "http://localhost:3000/directory")
+  XHR.setRequestHeader('Content-Type','application/json')
+  XHR.send(JSON.stringify(song))
+}
+function copySong (){
+  //FormData object converts html form to key value pairs
+  //name: data
+  let song = {
+    title: form['title'].value,
+    color: form['color'].value,
+    url : form['url'].value,
+    app: 'phishPizza',
+    method: 'add'
+  }
+  sendData(song)
+}
+form.addEventListener('submit', function(event){
+  //prevent html from changing the page on submit
+  event.preventDefault()
+  copySong()
+  form['submit'].disabled = true
+})

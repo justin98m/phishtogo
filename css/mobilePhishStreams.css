@@ -1,0 +1,56 @@
+body{
+  background-image: url('../media/phishwallpaper.jpg');
+}
+h1{
+  font-size: 35px;
+  text-align: center;
+ font-family: 'Mukta', sans-serif;
+  margin-bottom: 0px
+}
+#streamRow{
+  margin-top: 0px;
+}
+#streamList{
+  list-style-type: none;
+  border: solid;
+  width: 40%;
+  margin-left: 0;
+  margin-top:0px;
+  float: left;
+}
+#photo {
+ padding-top: 36%;  
+}
+#streamList li {
+  font-size: 40px;
+}
+
+.song {
+  margin-top: 0px 0px;
+  margin-bottom: 2px; 
+  width: 100%;
+  
+}
+.song a{
+  margin-top: 2px;
+  text-decoration: none;
+  font-family: 'Mukta', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+.song a:hover{
+  color: white;
+}
+.song a:visited{
+  
+}
+.delete{
+  height:  30px;
+  width: 30px;
+  float:right;
+  border: solid white;
+  margin-top: 10px;
+  margin-bottom: px;
+  font-size: 20px;
+  background-color : red;
+}
