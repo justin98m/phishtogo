@@ -24,16 +24,16 @@ function deleteSongServer(song){
   }
   const XHR = new XMLHttpRequest();
   console.log("deleting ", song.title, song.url , " from localhost");
-  //wait for response from server
+//wait for response from server
   //then alert of success or failure
   XHR.addEventListener("load", function(event){
-    alert("Data Submitted")
+    console.log("complete");
   })
   XHR.addEventListener("error", function(event){
     alert("There was an error , contact Justin so he can fix it")
-
   })
-  XHR.open("POST", "http://localhost:3000/directory")
+
+  XHR.open("POST", "http://ec2-3-88-169-211.compute-1.amazonaws.com:3000/directory")
   XHR.setRequestHeader('Content-Type','application/json')
   XHR.send(JSON.stringify(song))
 }

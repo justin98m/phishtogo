@@ -5,7 +5,7 @@ body{
   margin-top: 10%;
 }
 h1{
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
  font-family: 'Mukta', sans-serif;
   margin-bottom: 1px;
@@ -13,7 +13,6 @@ h1{
 }
 #photo {
   list-style-type: none;
-  border: solid  10px yellow;
 }
 form label{
   font-size: 35px;
@@ -30,7 +29,7 @@ form label{
 #submit{
   text-align: center;
   width: 60%;
-  margin: 0 20%;
+  margin: 2% 20%;
   height: 40px;
   color: white;
   font-weight: bold;
@@ -49,9 +48,8 @@ form label{
 }
 
 form{ 
-  border: solid white;
   float: left;
-  width: 47%;
+  width: 98%;
 }
 #color{ 
  width: 80%;
@@ -59,7 +57,7 @@ form{
 }
 #urlContainer{
   margin-top: 50px;
-  border: solid grey;
+
 }
 #url{
   height: 30px;

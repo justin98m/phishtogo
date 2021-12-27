@@ -8,27 +8,22 @@ h1{
   margin-bottom: 0px
 }
 #streamRow{
-  border: solid red;
   margin-top: 0px;
 }
 #streamList {
   list-style-type: none;
-  border: solid pink;
   width: 48%;
   float: left;
   margin-left: 0;
-  margin-top:0px;
+  margin-top:40px;
   margin-right: 5%;
 }
 #photo {
-  list-style-type: none;
-  border: solid  5px yellow;
-   
+  list-style-type: none; 
 }
 #streamList li {
   font-size: 50px;
   margin-bottom: : 20px;
-  border: solid green 1px;
 }
 
 .song {
@@ -63,8 +58,4 @@ h1{
 }
 .delete:hover{
   background-color: white
-}
-#photo img{
-  border: solid blue 2px;
-
 }

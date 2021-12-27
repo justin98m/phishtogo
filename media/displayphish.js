@@ -4,7 +4,7 @@
 //cors fix in firefox
 //https://testingfreak.com/how-to-fix-cross-origin-request-security-cors-error-in-firefox-chrome-and-ie/
 import addListener from "./deletephish.js"
-let requestUrl = "../datajson/phishPizza.json"
+let requestUrl = "./phishPizza.json"
 let request = new XMLHttpRequest()
 let songList = document.getElementById("streamList")
 console.log("Songs: ", songList);

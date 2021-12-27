@@ -3,10 +3,10 @@ var form = document.getElementById('form')
 //sends song data to server to be added to json file
 function sendData(song){
   const XHR = new XMLHttpRequest();
-  console.log("Sending ", song , " TO localhost");
   //wait for response from server
   //then alert of success or failure
   XHR.addEventListener("load", function(event){
+    console.log("Sending ", song , " TO server");
     alert("Data Submitted")
     form['submit'].disabled = false
   })
@@ -14,7 +14,7 @@ function sendData(song){
     alert("There was an error , contact Justin so he can fix it")
     form['submit'].disabled = false
   })
-  XHR.open("POST", "http://localhost:3000/directory")
+  XHR.open("POST", "http://ec2-3-88-169-211.compute-1.amazonaws.com:3000/directory")
   XHR.setRequestHeader('Content-Type','application/json')
   XHR.send(JSON.stringify(song))
 }
@@ -34,5 +34,6 @@ form.addEventListener('submit', function(event){
   //prevent html from changing the page on submit
   event.preventDefault()
   copySong()
-  form['submit'].disabled = true
+  alert("Song Submitted!")
+  form.reset()
 })
