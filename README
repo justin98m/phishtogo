@@ -1,5 +1,5 @@
 This was a project for a coworker as a secret Santa gift
-It's Serverless to an extent. This application holds json containing information about a song they have added to the site
+It's Serverless to an extent. This application holds json containing information about multiple songs they have added to the site
 The songs carries information that includes the text to be displayed in the html, the color of the text and the url to the media.
 There are two pages
   Page one displays the songs and allows for deletion of the songs
@@ -9,7 +9,7 @@ to an API I built that has access to the aws s3 holding the json file.
 The API will update the json based on the site's request and tell aws to update
 the json for the Website.
 
-I figure a database would be easier but I was interested in completing the site This
+I figure a database would be easier but I was interested in completing the site this way.
 
 I'm hoping to build more static sites that leverage the same api so I can
-have one application update content for multiple sites.
+have one server update content for multiple sites.
